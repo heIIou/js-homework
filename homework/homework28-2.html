@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Ключевые слова через запятую">
+    <meta name="description" content="Описание страницы до 200 символов">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Урок 28. Свойства и методы строковых обхектов. Свойство string</title>
+</head>
+    <div>
+        <script type="text/javascript">
+/*
+Второе домашнее задание к 28-му уроку.
+
+1. Напишите функцию, которая в качестве параметра получает строку,
+а как результат  свой работы вычисляет, в строке больше 10 символов или меньше.
+
+2. Запросите у пользователя ввод любого слова и поместите этот ввод в переменную.
+
+3. Вызовите вашу функцию, а в качестве параметра передайте то самое слово,
+которое вы  сохранили в  переменную.
+
+4. Напечатайте на экран сообщенеи о том, больше 10 символов в этом слове, меньше или равно 10.
+*/
+        // Мой вариант.
+/*        function word(userString) {
+            if (userString.length <10) {
+                document.write("В введеннем Вами слове менее 10 символов");
+            }
+
+            else {
+                document.write("В веденном Вами слове 10 и более символов");
+            }
+        }
+
+        var userWord = prompt("Введите Ваше слово:");
+        var result = word(userWord);*/
+
+        // Вариант Евгения Попова
+
+        </script>
+        <script type="text/javascript">
+          function dlina(str) {
+            let length = str.length;
+            return length;
+          }
+          let str = prompt("Напиши длинное слово. ",'Конкатенация');
+          dlina(str);
+          if (dlina(str) > 10) {
+            document.write("Походу длина  аж ", dlina(str), " см");
+          } else if (dlina(str) <= 10) {
+            document.write("Малова-то будет: ", dlina(str));
+          }
+        </script>
+    </div>
+</body>
+</html>

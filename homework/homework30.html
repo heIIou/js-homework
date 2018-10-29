@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Ключевые слова через запятую">
+    <meta name="description" content="Описание страницы до 200 символов">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Урок 30. Метод indexOf() и lastIndexOf() ( работа со строками)</title>
+</head>
+    <div>
+        <script type="text/javascript">
+        /*
+Домашнее задание к 30-му уроку.
+
+У вас есть переменная
+var mySite = "http://ruseller.com";
+
+Вам надо написать функцию, которая примет эту переменную в качестве параметра,
+а в теле функции проверит с помощью метода indexOf, встречается ли в этой
+переменной подстрока "http://".
+
+Если да, то вывести на экран сообщение, что в названии сайта присутствует
+указание протокола "http://", иначе - вывести, что не присутствует.
+*/
+
+            // Урок 30. Метод indexOf() и lastIndexOf() ( работа со строками)
+            // document.write(myString.indexOf("Солнце") + "</br>");
+            // document.write(myString.lastIndexOf("Солнце") + "</br>");
+            // На экран будет выведена информации о том, какой порядковый номер имеет первая буква указанного слова.
+
+        </script>
+        <script type="text/javascript">
+          let mySite = prompt("Напишите адрес любого сайта", 'https://google.com');
+          function indexOf(mySite) {
+            if (mySite.indexOf("https://") !== -1) {
+              document.write("В названии сайта есть протокол https://");
+            } else {
+              document.write("В названии сайте нет протокола https://");
+            }
+          }
+          indexOf(mySite);
+        </script>
+
+    </div>
+</body>
+</html>

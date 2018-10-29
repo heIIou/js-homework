@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Ключевые слова через запятую">
+    <meta name="description" content="Описание страницы до 200 символов">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>ДЗ _ Урок 27. Свойства и методы строковых обхектов. Свойство string</title>
+</head>
+    <div>
+        <script type="text/javascript">
+        /*
+Домашнее задание к 27-му уроку.
+
+Создать функцию fio(), которая поочередно запрашивает у пользователя имя, фамилию и отчество,
+а в  качестве результата своей работы возвращает ФИО одной строкой с пробелами между словами.
+*/
+            // alert(fio());
+        </script>
+        <script type="text/javascript">
+          function fio() {
+            let name = prompt("Введите Ваше имя", '');
+            let secondName = prompt("Теперь введите Вашу фамилию", '');
+            let thirdName = prompt("Наконец, введите Ваше отчество!", '');
+            const fio = "Пошли бы Вы, " + secondName + ' ' + name + " " + thirdName;
+            return fio;
+          }
+          document.write(fio());
+        </script>
+    </div>
+</body>
+</html>

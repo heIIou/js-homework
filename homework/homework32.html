@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Ключевые слова через запятую">
+    <meta name="description" content="Описание страницы до 200 символов">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Урок 32. Метод charAt()  и charCodeAt()( работа со строками)</title>
+</head>
+    <div>
+        <script type="text/javascript">
+            /*
+Домашнее задание к 32-му уроку.
+
+У вас есть массив: var students = ["Илья","Greg", "Алина"];
+Вам надо пройтись по каждому элементу этого массива и выяснить в каком элементе массива есть буквы,
+которые не попадают в диапазон русских букв.
+
+Подсказка. При решении нужно использовать цикл внутри цикла.
+В первом цикле вы перебираете элементы массива, а во внутреннем цикле уже каждый символ
+текущего элемента массива. Для  внутреннего цикла можете назвать счетчик var j = 0;
+*/
+// var fruits = [" Банан", appleSorts, "Груша", orangeSorts ];
+            // document.write("Мой любимый фрукт: " + fruits[3][1] + "</br>");
+            // document.write("Любимый фрукт отца: " + fruits[2] + "</br>");
+        </script>
+        <script type="text/javascript">
+          var students = ["Илья","Greg", "Алина"];
+          let str = "";
+          let poimav = "Русские буквы есть в следующих элементах массива: ";
+          console.log(students[0].codePointAt(0));
+          for (let i = 0; i < students.length; i++) {
+            str = students[i];
+            console.log(students[i]);
+            for ( let j = 1034; j < 1113; j++) {
+              if (str.charCodeAt(0) === j) {
+                poimav += students[i] + ", ";
+              }
+            }
+          }
+          alert(poimav);
+        </script>
+    </div>
+</body>
+</html>

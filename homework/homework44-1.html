@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Ключевые слова через запятую">
+    <meta name="description" content="Описание страницы до 200 символов">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Урок 44. Введение в объект Date. Работа с датами в JavaScript</title>
+</head>
+    <div>
+        <script type="text/javascript">
+            // // Урок 44. Введение в объект Date. Работа с датами в JavaScript
+                        /*
+            Первое домашнее задание к 44-му уроку.
+
+            Ваша задача, используя методы объекта date, вывести на экран
+            время в формате: час:минута:секунда (пример: 14:23:11)
+
+            При этом, если секунды и минуты попадают в интервал от 0 до 10,
+            они должны выводиться с нулем  впереди.
+            т.е. вместо 18:7:3 у Вас должно выводиться 18:07:03
+            */
+
+        </script>
+        <script type="text/javascript">
+        var now = new Date();
+          document.writeln(now.getHours());
+          if (now.getMinutes() < 10) {
+            document.writeln("0",now.getMinutes());
+          } else document.writeln(now.getMinutes());
+          if (now.getSeconds() < 10) {
+              document.writeln("0",now.getSeconds());
+          }  else document.writeln(now.getSeconds());
+        </script>
+    </div>
+</body>
+</html>

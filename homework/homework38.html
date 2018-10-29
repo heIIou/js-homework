@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Ключевые слова через запятую">
+    <meta name="description" content="Описание страницы до 200 символов">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Урок 39. Функция isNanN() Функции и методы числовых объектров.</title>
+</head>
+    <div>
+        <script type="text/javascript">
+            // Урок 39. Функция isNaN() Функции и методы числовых объектров.
+/*
+Домашнее задание к 39-му уроку.
+
+Написать функцию, которая получает в качестве параметра массив,
+затем перебирает все его элементы и выводит на экран, какая
+информация содержится в каждом элементе: число или нечисло.
+Массив для примера: var randSimbol = ["Молоко", 77, 11, "Мед", -88];
+*/
+
+
+        </script>
+        <script type="text/javascript">
+          var randSimbol = ["Молоко", 77, 11, "Мед", -88];
+          function NotANumber(str) {
+            if (isNaN(str) === false) {
+              document.writeln(str," - это число");
+            } else if (isNaN(str) === true) {
+              document.writeln(str," - это не число");
+            }
+          }
+          for (let i = 0; i < randSimbol.length; i++){
+          NotANumber(randSimbol[i]);
+          }
+        </script>
+    </div>
+</body>
+</html>

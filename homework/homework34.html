@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Ключевые слова через запятую">
+    <meta name="description" content="Описание страницы до 200 символов">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Урок 33-34. Метод search() Введение в регулярные выражения. (работа со строками)</title>
+</head>
+    <div>
+        <script type="text/javascript">
+            // Урок 33-34. Метод search() Введение в регулярные выражения. (работа со строками)
+      /*
+Домашнее задание к 34-му уроку.
+
+Написать функцию, которая получает в качестве параметра переменную
+содержащую строку и с помощью регулярного выражения проверяет,
+начинается ли содержимое этой переменной с цифры или нет.
+
+Результат своей работы функция выводит на экран.
+
+Переменная для передачи в функцию: var forTesting = "8 пингвинов и 9 карасей.";
+*/
+
+        </script>
+        <script type="text/javascript">
+          const forTesting = "11 пингвинов и 9 карасей."
+          const regular = /\d/ ;
+          function searchForNumbers(forTesting) {
+              if (forTesting.search(regular) === 0) {
+              document.write("Переменная начинается с цифры");
+              }
+            }
+          searchForNumbers(forTesting);
+        </script>
+    </div>
+</body>
+</html>

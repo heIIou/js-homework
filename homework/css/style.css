@@ -1,0 +1,17 @@
+body {
+    background-color: #D1D5CE;
+    font:14px Tahoma, sans-serif;
+    color:#444A4E;
+    letter-spacing: 1px;
+}
+
+body div {
+    margin:0 auto;
+    background-color: #D1D5CE;
+    text-align: center;
+    line-height: 30px;
+}
+
+body div p {
+    font:bold 14px Tahoma, sans-serif;
+}

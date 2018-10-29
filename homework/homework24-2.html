@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Ключевые слова через запятую">
+    <meta name="description" content="Описание страницы до 200 символов">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Урок 24. Методы объекта window. Методы alert(), prompt(), и confirm() </title>
+</head>
+    <div>
+        <script type="text/javascript">
+                    /*
+                    Второе домашнее задание к 24-му уроку.
+
+                    Вам надо спросить сначала, сколько человеку лет, затем - какой сейчас год.
+                    После этого нужно создать цикл и вывести на экран список,
+                    сколько человеку было лет год назад, 2 года назад и т.д.
+
+                    Например, человек ввел что ему 30 лет, и сейчас 2010 год.
+                    Вам в итоге надо вывести наэкран
+                    В 2009 году Вам было 29 лет
+                    В 2008 году Вам было 28 лет
+                    и т.д.
+
+                    Для создания цикла можете использовать while или for, которые мы с вами прошли в предыдущих уроках.
+                    */
+                  // Мой вариант
+/*            var age = prompt("Сколько вам сейчас лет?", "Ваш возраст:");
+            var year = prompt("Какй сейчас год?", "Ваш ответ:");
+            var finalYear = year - age - 1 ;
+            for(var age; age>0; age--) {
+                document.write("В ");
+                document.write(finalYear+age);
+                document.write(" году Вам было " );
+                document.write(age - 1);
+                document.write(" Лет(год).");
+                document.write("</br>");
+            }*/
+        </script>
+
+        <script type="text/javascript">
+        let age = prompt ("Сколько вам лет?", '');
+        let year = prompt ("Какой сейчас год?", '2018');
+        for (; age !== 0; age--) {
+          document.writeln("\nВ ", year," году Вам было ", age, " лет(год)!\n");
+          year--;
+        }
+        </script>
+
+    </div>
+</body>
+</html>

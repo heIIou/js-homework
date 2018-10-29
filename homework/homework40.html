@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Ключевые слова через запятую">
+    <meta name="description" content="Описание страницы до 200 символов">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Урок 40. Функции parseInt(), parseFloat() и Number() Функции и методы числовых объектров.</title>
+</head>
+    <div>
+        <script type="text/javascript">
+            // Урок 40. Функции parseInt(), parseFloat() и Number() Функции и методы числовых объектров.
+            /*
+            Домашнее задание к 40-му уроку.
+
+            Напишите функцию, которая получает в качестве параметра массив и перебирает
+            его на предмет преобразования строк, начинающихся с числа в обычные числа.
+            В результате работы функции, массив должен изменить свои значения на полностью числовые.
+
+            Массив для задания:
+
+            var myArray = ["100 попугаев", "201 рубль", "624 доллара", "109 кроликов", "33 весельчака", "62 кабана"];
+            */
+
+        </script>
+        <script type="text/javascript">
+          var myArray = ["100 попугаев", "201 рубль", "624 доллара", "109 кроликов", "33 весельчака", "62 кабана"];
+          console.log(parseInt("100 попугаев"));
+          function Parse(myArray) {
+            for (let i = 0; i < myArray.length; i++){
+              let str = myArray[i];
+              myArray[i] = parseInt(str);
+          }
+          document.write(myArray);
+        }
+          Parse(myArray);
+        </script>
+    </div>
+</body>
+</html>

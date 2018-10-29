@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Ключевые слова через запятую">
+    <meta name="description" content="Описание страницы до 200 символов">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>Урок 31. Метод slice() ( работа со строками)</title>
+</head>
+    <div>
+        <script type="text/javascript">
+            // Урок 31. Метод slice() ( работа со строками)
+            /*
+Домашнее задание к 31-му уроку.
+
+У вас есть строка var myStr = "Хороший день.";
+Ваша задача поместить слово "день" из этой строки в переменную day с помощью метода slice.
+Вывести эту перменную на экран.
+*/
+        </script>
+        <script type="text/javascript">
+        var myStr = "Хороший вечер";
+        let start = 0;
+        for (let i = 0; i < myStr.length; i++) {
+          if (myStr[i] === " ") {
+            start = i;
+          }
+        }
+        let day = myStr.slice(start, myStr.length);
+        document.write(day);
+
+        </script>
+    </div>
+</body>
+</html>
