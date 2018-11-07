@@ -19,10 +19,11 @@
         <script type="text/javascript">
           let num = prompt("Введите число для возведения в куб!", '1');
           function cube(num) {
-            num = num ** 3;
-            return num;
+            return num = num ** 3;
           }
-          document.write(cube(num));
+
+          const power = (num) => num ** 3;
+          document.write(cube(num)," = ", power(num));
         </script>
     </div>
 </body>

@@ -17,11 +17,26 @@
 пять строк, где каждая строка - это назване страны и численность ее населения.-->
          <!-- Вариант 1-->
         <script type="text/javascript">
-         var a = ["Россия", "США", "Германия", "Австралия", "Канада"],
-             b = [12,15,10,2,7];
-             for (let i = 0; i !== 5; i++) {
-               document.writeln(a[i],' ',b[i]);
+        // способ 1
+        
+         const countries = ["Россия", "США", "Германия", "Австралия", "Канада"],
+             population = [12,15,10,2,7];
+             for (let i = 0; i < countries.length; i++) {
+               document.writeln(countries[i],':',population[i]," ");
              }
+
+          // способ 2
+
+          const country = {
+            ["Россия"]: 12,
+            ["США"]: 15,
+            ["Германия"]: 10,
+            ["Австралия"]: 2,
+            ["Канада"]: 7
+          }
+          for (key in country) {
+            document.writeln(key,":", country[key]," ");
+        }
         </script>
     </div>
 </body>

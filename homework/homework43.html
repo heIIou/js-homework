@@ -28,33 +28,18 @@
 
         </script>
         <script type="text/javascript">
-          var emptyArray = new Array(10);
-          for (let i = 0; i < emptyArray.length; i++) {
-            emptyArray[i] = Number(emptyArray[i]);
-            emptyArray[i] = Math.random();
-          }
-          console.log(emptyArray);
-          emptyArray[0] = Math.random();
-          console.log(emptyArray[0]);
-          let start = prompt("Введите начальное значение интервала", 0);
-          let end = prompt("Введите конечное значение интервала", 9);
-          console.log(typeof start,typeof end);
-          start = Number(start);
-          end = Number(end);
-          function fill(emptyArray, start, end) {
-            start = Number(start);
-            end = Number(end);
-            for (let j = 0; j < emptyArray.length; j++) {
-              start = Number(start);
-              end = Number(end);
-              console.log(typeof emptyArray[j], emptyArray[j]);
-              console.log(typeof end, end, typeof start, start);
-              emptyArray[j] *= (end - start);
-              console.log(emptyArray[j]);
+          let emptyArray = new Array(10);
+          let newEmptyArray = emptyArray.slice();
+          let start = prompt("Начальное значение интервала");
+          let end = prompt("Конечное значение интервала");
+          function fill(emptyArray,start,end) {
+            for (let i = 0; i < emptyArray.length; i++) {
+              let result = parseFloat(Math.random() * (end - start) + start);
+              newEmptyArray[i] = result.toFixed(2);
             }
-            alert(emptyArray);
+            return newEmptyArray;
           }
-          fill(emptyArray);
+          document.writeln(fill(emptyArray,start,end));
         </script>
 
     </div>

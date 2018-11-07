@@ -39,10 +39,12 @@
         </script>
 
         <script type="text/javascript">
-        let age = prompt ("Сколько вам лет?", '');
+        let age = prompt ("Сколько вам лет?", 'Ваш возраст');
         let year = prompt ("Какой сейчас год?", '2018');
-        for (; age !== 0; age--) {
-          document.writeln("\nВ ", year," году Вам было ", age, " лет(год)!\n");
+        --age;
+        --year;
+        for (; age > 0; age--) {
+          document.writeln("В ", year," году Вам было ", age, " лет(год)!<br>");
           year--;
         }
         </script>

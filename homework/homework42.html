@@ -24,13 +24,24 @@
         */
         </script>
         <script type="text/javascript">
-          var numberArray = [34.82, 12.90, 17.01, 78.51];
+          const numberArray = [34.82, 12.90, 17.01, 78.51];
+          const newNumberArray = numberArray.slice();
           function round(numberArray) {
+            document.write("Метод floor() объекта Math: <br>")
             for (let i = 0; i < numberArray.length; i++) {
-              let number = numberArray[i];
-              numberArray[i] = Math.ceil(number);
+              newNumberArray[i] = Math.floor(numberArray[i]);
+              document.write(newNumberArray[i]," ");
             }
-            alert(numberArray);
+            document.write("<br>Метод round() объекта Math: <br>")
+            for (let i = 0; i < numberArray.length; i++) {
+              newNumberArray[i] = Math.round(numberArray[i]);
+              document.write(newNumberArray[i]," ");
+            }
+            document.write("<br>Метод ceil() объекта Math: <br>")
+            for (let i = 0; i < numberArray.length; i++) {
+              newNumberArray[i] = Math.ceil(numberArray[i]);
+              document.write(newNumberArray[i]," ");
+            }
           }
           round(numberArray);
         </script>

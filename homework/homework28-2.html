@@ -42,15 +42,15 @@
         <script type="text/javascript">
           function dlina(str) {
             let length = str.length;
-            return length;
+            if (length > 10) {
+                document.write("Походу длина  аж ", length, " символов");
+            } else if (length <= 10) {
+                document.write("Малова-то будет: ", length);
+            }
+            return;
           }
           let str = prompt("Напиши длинное слово. ",'Конкатенация');
           dlina(str);
-          if (dlina(str) > 10) {
-            document.write("Походу длина  аж ", dlina(str), " см");
-          } else if (dlina(str) <= 10) {
-            document.write("Малова-то будет: ", dlina(str));
-          }
         </script>
     </div>
 </body>

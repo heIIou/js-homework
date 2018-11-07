@@ -22,9 +22,8 @@
         // && - ЭТО УСЛОВИЕ "И" в языке и оно очень ВАЖНО
         </script>
         <script type="text/javascript">
-          var students = ["Дмитрий", "Алексей", "Петр", "Виктор"];
-          const i = students.length - 1;
-          if (students.length === 4 && students[i] === "Виктор") {
+          const students = ["Дмитрий", "Алексей", "Петр", "Виктор"];
+          if (students.length === 4 && students[students.length - 1] === "Виктор") {
             alert("Этот массив мне подходит");
           } else {
             alert("Этот массив мне не подходит. СОСААААТЬ");

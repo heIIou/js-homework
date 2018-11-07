@@ -25,14 +25,12 @@
             // document.write("Любимый фрукт отца: " + fruits[2] + "</br>");
         </script>
         <script type="text/javascript">
-          var students = ["Илья","Greg", "Алина"];
+           students = ["Илья","Greg", "Алина"];
           let str = "";
-          let poimav = "Русские буквы есть в следующих элементах массива: ";
-          console.log(students[0].codePointAt(0));
+          let poimav = "Русские буквы отсутствуют в следующих элементах массива: ";
           for (let i = 0; i < students.length; i++) {
             str = students[i];
-            console.log(students[i]);
-            for ( let j = 1034; j < 1113; j++) {
+            for ( let j = 65; j < 122; j++) {
               if (str.charCodeAt(0) === j) {
                 poimav += students[i] + ", ";
               }

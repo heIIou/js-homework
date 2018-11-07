@@ -35,11 +35,11 @@
                 */
         </script>
         <script type="text/javascript">
-          var tel = "8/927/31/10/765";
-          var sign = "-";
+          let tel = "8/927/31/10/765";
+          let sign = "-";
           function replace(tel,sign) {
-            var regular = /\//g;
-            var result = tel.replace(regular,sign);
+            let regular = /\//g;
+            let result = tel.replace(regular,sign);
             return result;
           }
           console.log(replace(tel,sign));

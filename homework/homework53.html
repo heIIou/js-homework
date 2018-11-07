@@ -1,44 +1,74 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="keywords" content="Ключевые слова через запятую">
-    <meta name="description" content="Описание страницы до 200 символов">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <title>Урок 53. Объекты navigator, screen, location и их свойства </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Ключевые слова через запятую">
+  <meta name="description" content="Описание страницы до 200 символов">
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <title>Урок 53. Объекты navigator, screen, location и их свойства </title>
 </head>
-    <div>
-        <script type="text/javascript">
+<div>
+  <script type="text/javascript">
 
-            // Урок 53. Объекты navigator, screen, location и их свойства
+  // Урок 53. Объекты navigator, screen, location и их свойства
 
-            // var option;
+  // const option;
 
-            /*
+  /*
 
-            for(option in navigator) {
-                document.write(option + ':' + navigator[option] + "</br>");
-            }
+  for(option in navigator) {
+  document.write(option + ':' + navigator[option] + "</br>");
+}
 
-            */
+*/
 
-            /*
-            Домашнее задание к 53-му уроку.
+/*
+Домашнее задание к 53-му уроку.
 
-            Выясните с какого браузера человек зашел на вашу страничку и, в зависимости от браузера,
-            выведите на экран информацию.
+Выясните с какого браузера человек зашел на вашу страничку и, в зависимости от браузера,
+выведите на экран информацию.
 
-            Если firefox: "Ваш браузер Firefox."
-            Если opera: "Ваш браузер Opera."
-            Если chrome: "Ваш браузер Chrome."
-            Если ie: "Ваш браузер Internet Explorer."
-            */
+Если firefox: "Ваш браузер Firefox."
+Если opera: "Ваш браузер Opera."
+Если chrome: "Ваш браузер Chrome."
+Если ie: "Ваш браузер Internet Explorer."
+*/
 
 
-        </script>
-        <script type="text/javascript">
-          console.log(navigator.userAgent);
-        </script>
-    </div>
+</script>
+<script type="text/javascript">
+console.log(navigator.userAgent);
+  // Opera 8.0+
+  let isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+
+  // Firefox 1.0+
+  let isFirefox = typeof InstallTrigger !== 'undefined';
+
+  // Safari 3.0+ "[object HTMLElementConstructor]"
+  let isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+
+  // Internet Explorer 6-11
+  let isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+  // Edge 20+
+  let isEdge = !isIE && !!window.StyleMedia;
+
+  // Chrome 1+
+  let isChrome = !!window.chrome && !!window.chrome.webstore;
+
+  // Blink engine detection
+  let isBlink = (isChrome || isOpera) && !!window.CSS;
+
+  let output = 'Detecting browsers by ducktyping:<hr>';
+  output += 'isFirefox: ' + isFirefox + '<br>';
+  output += 'isChrome: ' + isChrome + '<br>';
+  output += 'isSafari: ' + isSafari + '<br>';
+  output += 'isOpera: ' + isOpera + '<br>';
+  output += 'isIE: ' + isIE + '<br>';
+  output += 'isEdge: ' + isEdge + '<br>';
+  output += 'isBlink: ' + isBlink + '<br>';
+  document.body.innerHTML = output;
+</script>
+</div>
 </body>
 </html>
